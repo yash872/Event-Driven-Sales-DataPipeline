@@ -7,7 +7,7 @@ We will design a system using AWS services such as S3, Lambda, DynamoDB, Step Fu
 ***
 
 ## Architectural Diagram
-![SalesDataPipeline Architecture](https://github.com/yash872/Event-Driven-Sales-DataPipeline/blob/main/Images/SalesDataPipeline.jpg)
+![Event-Driven-SalesDataPipeline Architecture](https://github.com/yash872/Event-Driven-Sales-DataPipeline/blob/main/Images/Event-Driven-SalesDataPipeline.jpg)
 
 ***
 
@@ -31,9 +31,7 @@ which will start a workflow for the complete data process.
 
 
 ### 4. Create a Lambda Funaction
-- we will create a simple Lambda function "order-json-data-process" to validate the intrim data in state machine.
-it will return the successfull output if the input data is having 'contaxt-info' else it will raise an exception
-
+- we will create a simple Lambda function "order-json-data-process" to validate the intrim data in state machine. it will return the successfull output if the input data is having 'contaxt-info' else it will raise an exception
 ![validationLambda](https://github.com/yash872/Event-Driven-Sales-DataPipeline/blob/main/Images/validationLambda.JPG)
 
 - Current State Machine workflow
